@@ -5,20 +5,20 @@ import java.util.logging.Logger;
 import junit.framework.TestCase;
 
 /**
- * The Class AbstractExcercice.
+ * The Class AbstractExercice.
  * 
  * Super class used for JUnit TestCase
  * 
  * @author Stephane
  * @since 2013
  */
-public class AbstractExcercice extends TestCase {
+public class AbstractExercice extends TestCase {
 
     /**
      * The Constant LOG.
      * Logger used to write logs
      * */
-    protected static final Logger LOG = Logger.getLogger(AbstractExcercice.class.getName());
+    protected static final Logger LOG = Logger.getLogger(AbstractExercice.class.getName());
 
     /**
      * The Constant NEW_LINE.

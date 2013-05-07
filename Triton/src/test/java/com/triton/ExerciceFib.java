@@ -9,12 +9,12 @@ import java.util.List;
 import org.junit.Test;
 
 /**
- * The Class ExcerciceFib.
+ * The Class ExerciceFib.
  * 
  * @author Stephane
  * @since 2013
  */
-public class ExcerciceFib extends AbstractExcercice {
+public class ExerciceFib extends AbstractExercice {
 
     /**
      * The Constant ITERATION.

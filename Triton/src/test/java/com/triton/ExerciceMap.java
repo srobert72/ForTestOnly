@@ -6,14 +6,14 @@ import java.util.Map;
 import org.junit.Test;
 
 /**
- * The Class ExcerciceMap.
+ * The Class ExerciceMap.
  * 
  * TestCase for counting how many times put() & get() are called on a java.util.Map
  * 
  * @author Stephane
  * @since 2013
  */
-public class ExcerciceMap extends AbstractExcercice {
+public class ExerciceMap extends AbstractExercice {
 
     /**
      * The Constant ITERATION.

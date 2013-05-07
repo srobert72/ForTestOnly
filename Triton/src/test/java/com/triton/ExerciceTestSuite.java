@@ -7,7 +7,7 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 /**
- * The Class ExcerciceTestSuite.
+ * The Class ExerciceTestSuite.
  * 
  * TestSuite to launch all TestCase
  * 
@@ -15,7 +15,7 @@ import org.junit.runners.Suite.SuiteClasses;
  * @since 2013
  */
 @RunWith(Suite.class)
-@SuiteClasses(value = { ExcerciceDisk.class, ExcerciceFib.class, ExcerciceMap.class, ExcerciceNumberToWords.class, ExcerciceStwAndo.class })
-public class ExcerciceTestSuite extends TestSuite {
+@SuiteClasses(value = { ExerciceDisk.class, ExerciceFib.class, ExerciceMap.class, ExerciceNumberToWords.class, ExerciceStwAndo.class })
+public class ExerciceTestSuite extends TestSuite {
 
 }

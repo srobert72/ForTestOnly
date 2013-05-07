@@ -3,14 +3,14 @@ package com.triton;
 import org.junit.Test;
 
 /**
- * The Class ExcerciceNumberToWords.
+ * The Class ExerciceNumberToWords.
  * 
  * TestCase for english number to words replacements
  * 
  * @author Stephane
  * @since 2013
  */
-public class ExcerciceNumberToWords extends AbstractExcercice {
+public class ExerciceNumberToWords extends AbstractExercice {
 
     /**
      * The Constant IS.

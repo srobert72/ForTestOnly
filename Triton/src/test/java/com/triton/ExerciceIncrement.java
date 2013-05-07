@@ -8,12 +8,12 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * The Class ExcerciceIncrement.
+ * The Class ExerciceIncrement.
  * 
  * @author Stephane
  * @since 2013
  */
-public class ExcerciceIncrement extends AbstractExcercice {
+public class ExerciceIncrement extends AbstractExercice {
     private static final int INITAL_VALUE = 100;
     private static final int ITERATION = 10000000;
     private static final int NB_THREADS = 10;

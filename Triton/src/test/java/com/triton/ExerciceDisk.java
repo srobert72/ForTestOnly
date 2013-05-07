@@ -5,12 +5,12 @@ import java.io.File;
 import org.junit.Test;
 
 /**
- * The Class ExcerciceDisk.
+ * The Class ExerciceDisk.
  * 
  * @author Stephane
  * @since 2013
  */
-public class ExcerciceDisk extends AbstractExcercice {
+public class ExerciceDisk extends AbstractExercice {
 
     /** The root directory to test. */
     private final String fileTest = "c:\\";

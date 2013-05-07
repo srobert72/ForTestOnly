@@ -3,14 +3,14 @@ package com.triton;
 import org.junit.Test;
 
 /**
- * The Class ExcerciceStwAndo.
+ * The Class ExerciceStwAndo.
  * 
  * TestCase for Str/Ando replacements
  * 
  * @author Stephane
  * @since 2013
  */
-public class ExcerciceStwAndo extends AbstractExcercice {
+public class ExerciceStwAndo extends AbstractExercice {
 
     /**
      * The Constant ITERATION.
