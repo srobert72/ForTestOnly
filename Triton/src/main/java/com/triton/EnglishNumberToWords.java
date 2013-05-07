@@ -2,15 +2,33 @@ package com.triton;
 
 import java.text.DecimalFormat;
 
+/**
+ * The Class EnglishNumberToWords.
+ * 
+ * Sub class used to convert integer numbers into words in English language
+ * 
+ * @author Stephane
+ * @since 2013
+ */
 public class EnglishNumberToWords extends AbstractNumberToWords {
 
+    /** The Constant TENS_NAMES. */
     private static final String[] TENS_NAMES = { "", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety" };
 
+    /** The Constant NUM_NAMES. */
     private static final String[] NUM_NAMES = { "", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve",
             "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen" };
 
+    /** The Constant BLOCK_NAMES. */
     private static final String[] BLOCK_NAMES = { "", "hundred", "thousand", "million", "billion" };
 
+    /**
+     * Convert numbers less than one thousand.
+     * 
+     * @param numberToConvert
+     *            the number to convert into words
+     * @return the words for this number
+     */
     private static String convertLessThanOneThousand(final int numberToConvert) {
         String soFar;
 
@@ -37,6 +55,11 @@ public class EnglishNumberToWords extends AbstractNumberToWords {
         return sb.toString();
     }
 
+    /*
+     * (non-Javadoc)
+     * 
+     * @see com.triton.AbstractNumberToWords#convert(long)
+     */
     @Override
     public final String convert(final long number) {
         if ((number < 0) || (number > MAX_ALLOWED)) {
@@ -97,6 +120,19 @@ public class EnglishNumberToWords extends AbstractNumberToWords {
         return result;
     }
 
+    /**
+     * Convert block.
+     * 
+     * @param sb
+     *            the StringBuilder to append words in
+     * @param blockName
+     *            the block name
+     * @param blockValue
+     *            the block number value
+     * @param needSeparator
+     *            is comma separator needed between 2 blocks
+     * @return true, if block was generated
+     */
     private boolean convertBlock(final StringBuilder sb, final String blockName, final int blockValue, final boolean needSeparator) {
         boolean blockFull = false;
 

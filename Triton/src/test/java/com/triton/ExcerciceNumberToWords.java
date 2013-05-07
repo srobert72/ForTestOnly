@@ -2,10 +2,32 @@ package com.triton;
 
 import org.junit.Test;
 
+/**
+ * The Class ExcerciceNumberToWords.
+ * 
+ * TestCase for english number to words replacements
+ * 
+ * @author Stephane
+ * @since 2013
+ */
 public class ExcerciceNumberToWords extends AbstractExcercice {
+
+    /**
+     * The Constant IS.
+     * special word used in logs only
+     * */
     private static final String IS = " is ";
 
+    /**
+     * The Enum NumberWords.
+     * 
+     * Enumeration that contains some test cases with a number and its expected words sentence
+     * 
+     * @author Stephane
+     * @since 2013
+     */
     private enum NumberWords {
+
         test1(0, "zero"), test2(1, "one"), test3(16, "sixteen"), test4(100, "one hundred"), test5(118, "one hundred eighteen"), test6(200, "two hundred"),
 
         test7(219, "two hundred nineteen"), test8(800, "eight hundred"), test9(801, "eight hundred one"), test10(1316, "one thousand, three hundred sixteen"),
@@ -22,26 +44,53 @@ public class ExcerciceNumberToWords extends AbstractExcercice {
 
         test20(100282, "one hundred thousand, two hundred eighty two");
 
+        /** The number to test. */
         private long number;
+
+        /** The expected words sentence. */
         private String words;
 
+        /**
+         * Instantiates a new NumberWords.
+         * 
+         * @param numberValue
+         *            the number value
+         * @param wordsText
+         *            the expected words sentence
+         */
         private NumberWords(final long numberValue, final String wordsText) {
             this.number = numberValue;
             this.words = wordsText;
         }
 
+        /**
+         * Gets the number.
+         * 
+         * @return the number
+         */
         public long getNumber() {
             return number;
         }
 
+        /**
+         * Gets the words.
+         * 
+         * @return the expected words sentence
+         */
         public String getWords() {
             return words;
         }
 
     };
 
+    /**
+     * Test number to words.
+     * 
+     * Performs NumberToWords conversion for all test cases in NumberWords enumeration
+     * Assert that words sentence in result is as expected in test case
+     */
     @Test
-    public final void testFreeDiskSpace() {
+    public final void testNumberToWords() {
         StringBuilder sb = new StringBuilder();
 
         EnglishNumberToWords numberToWords = new EnglishNumberToWords();
@@ -49,7 +98,7 @@ public class ExcerciceNumberToWords extends AbstractExcercice {
         String words;
         for (NumberWords numberWords : NumberWords.values()) {
             words = numberToWords.convert(numberWords.getNumber());
-            sb.append(numberWords.getNumber()).append(IS).append(words);
+            sb.append(numberWords.getNumber()).append(IS).append(words).append(NEW_LINE);
 
             assertEquals("Number in words failed : ", numberWords.getWords(), words);
         }

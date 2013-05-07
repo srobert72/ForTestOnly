@@ -5,10 +5,34 @@ import java.util.Map;
 
 import org.junit.Test;
 
+/**
+ * The Class ExcerciceMap.
+ * 
+ * TestCase for counting how many times put() & get() are called on a java.util.Map
+ * 
+ * @author Stephane
+ * @since 2013
+ */
 public class ExcerciceMap extends AbstractExcercice {
+
+    /**
+     * The Constant ITERATION.
+     * Number of iterations the test will perform
+     * */
     private static final int ITERATION = 100;
+
+    /**
+     * The Constant VALUE_TEST.
+     * Arbitrary value stored into map during tests
+     * */
     private static final int VALUE_TEST = 100;
 
+    /**
+     * Test iterator.
+     * 
+     * Iterates number between 1 to N and randomly calls get() or put() on a map
+     * A the end displays how many put() & get() have been called
+     */
     @Test
     public final void testIterator() {
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
