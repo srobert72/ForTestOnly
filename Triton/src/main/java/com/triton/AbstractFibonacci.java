@@ -29,7 +29,7 @@ public abstract class AbstractFibonacci {
      *            the number to get suite up to
      * @return the fibonacci suite for this number
      */
-    public List<Long> getFibonacciSuite(final int number) {
+    public final List<Long> getFibonacciSuite(final int number) {
         ArrayList<Long> result = new ArrayList<Long>();
 
         for (int i = 0; i < number; i++) {

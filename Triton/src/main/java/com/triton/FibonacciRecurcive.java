@@ -16,7 +16,7 @@ public class FibonacciRecurcive extends AbstractFibonacci {
      * @see com.triton.AbstractFibonacci#getFibonacci(int)
      */
     @Override
-    public long getFibonacci(final int number) {
+    public final long getFibonacci(final int number) {
         if (number == 0) {
             return 0;
         } else if (number == 1) {

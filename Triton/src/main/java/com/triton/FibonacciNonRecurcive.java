@@ -16,7 +16,7 @@ public class FibonacciNonRecurcive extends AbstractFibonacci {
      * @see com.triton.AbstractFibonacci#getFibonacci(int)
      */
     @Override
-    public long getFibonacci(final int number) {
+    public final long getFibonacci(final int number) {
         int prev = -1;
         int result = 1;
         int sum;

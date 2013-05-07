@@ -61,7 +61,7 @@ public class ExcerciceStwAndo extends AbstractExcercice {
     }
 
     /**
-     * Test a number (with modulo) if it is multiple of 3 or 5
+     * Test a number (with modulo) if it is multiple of 3 or 5.
      * multiple of 3 : writes "Stw"
      * multiple of 5 : writes or appends "Ando"
      * else : writes usual figures

@@ -41,7 +41,7 @@ public final class MapWithStat<K, V> {
     }
 
     /**
-     * Gets the number of times method put() was called
+     * Gets the number of times method put() was called.
      * 
      * @return the number of times method put() was called
      */
@@ -50,7 +50,7 @@ public final class MapWithStat<K, V> {
     }
 
     /**
-     * Gets the number of times method get() was called
+     * Gets the number of times method get() was called.
      * 
      * @return the number of times method get() was called
      */
